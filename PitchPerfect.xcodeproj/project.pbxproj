@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34854BF1203DE6C1002588D3 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34854BF0203DE6C1002588D3 /* PlaySoundsViewController.swift */; };
+		34854BF3203E06A3002588D3 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34854BF2203E06A3002588D3 /* PlaySoundsViewController+Audio.swift */; };
 		34FBF868203B8D49008196FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBF867203B8D49008196FF /* AppDelegate.swift */; };
-		34FBF86A203B8D49008196FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBF869203B8D49008196FF /* ViewController.swift */; };
+		34FBF86A203B8D49008196FF /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBF869203B8D49008196FF /* RecordSoundsViewController.swift */; };
 		34FBF86D203B8D49008196FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FBF86B203B8D49008196FF /* Main.storyboard */; };
 		34FBF86F203B8D49008196FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FBF86E203B8D49008196FF /* Assets.xcassets */; };
 		34FBF872203B8D49008196FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FBF870203B8D49008196FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34854BF0203DE6C1002588D3 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		34854BF2203E06A3002588D3 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		34FBF864203B8D49008196FF /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FBF867203B8D49008196FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34FBF869203B8D49008196FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34FBF869203B8D49008196FF /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		34FBF86C203B8D49008196FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FBF86E203B8D49008196FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34FBF871203B8D49008196FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				34FBF867203B8D49008196FF /* AppDelegate.swift */,
-				34FBF869203B8D49008196FF /* ViewController.swift */,
+				34FBF869203B8D49008196FF /* RecordSoundsViewController.swift */,
+				34854BF2203E06A3002588D3 /* PlaySoundsViewController+Audio.swift */,
+				34854BF0203DE6C1002588D3 /* PlaySoundsViewController.swift */,
 				34FBF86B203B8D49008196FF /* Main.storyboard */,
 				34FBF86E203B8D49008196FF /* Assets.xcassets */,
 				34FBF870203B8D49008196FF /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34FBF86A203B8D49008196FF /* ViewController.swift in Sources */,
+				34FBF86A203B8D49008196FF /* RecordSoundsViewController.swift in Sources */,
+				34854BF3203E06A3002588D3 /* PlaySoundsViewController+Audio.swift in Sources */,
+				34854BF1203DE6C1002588D3 /* PlaySoundsViewController.swift in Sources */,
 				34FBF868203B8D49008196FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
