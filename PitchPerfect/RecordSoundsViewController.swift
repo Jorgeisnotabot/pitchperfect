@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
+class RecordSoundsViewController: UIViewController{
     
     var audioRecorder: AVAudioRecorder!
 
@@ -25,7 +25,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewWillAppear(animated)
         configureUI(isRecording: false)
     }
+    //MARK: Function For Configuring The UI
+    func configureUI(isRecording: Bool){
+        recordingLabel.text = isRecording ? "Recording in Progress" : "Tap to Record"
+        stopRecordingButton.isEnabled = isRecording
+        recordButton.isEnabled = !isRecording
+    }
+}
 
+// MARK: - AVAudioRecorderDelegate
+extension RecordSoundsViewController: AVAudioRecorderDelegate {
 
     @IBAction func recordAudio(_ sender: Any) {
         configureUI(isRecording: true)
@@ -51,12 +60,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         try! audioSession.setActive(false)
     }
     
-    //MARK: Function For Configuring The UI
-    func configureUI(isRecording: Bool){
-        recordingLabel.text = isRecording ? "Recording in Progress" : "Tap to Record"
-        stopRecordingButton.isEnabled = isRecording
-        recordButton.isEnabled = !isRecording
-    }
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
